@@ -1,0 +1,153 @@
+/* HEADER*/
+
+.main-container{
+    max-width: 80vw;
+    height: 100vh;
+    margin-left: 320px;
+    margin-right: 56px;
+}
+
+.header__navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    margin: 10px;
+    border-radius: 8px;
+    background-color: #121212;
+    padding: 12px;
+}
+
+.header__navigation .navigation{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    }
+
+.header__navigation .navigation .arrow-left{
+    margin-right: 1.25rem;
+    }
+
+.arrow-left, 
+.arrow-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: var(--bg-icon);
+    background-color:var(--bg-arrow-color);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.header__login{
+    display: flex;
+    align-items: center;
+}
+
+.header__search{
+    display: flex;
+    align-items: center;
+    width: 364px;
+    height: 48px;
+    margin-left: 8px;
+    background-color: #242424;
+    border-radius: 500px;
+    border: 1px solid transparent;
+}
+
+.header__search img{
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+}
+
+.header__search input{
+    background: transparent;
+    border: none;
+    padding: 0px 100px 0 12px;
+    color: #fff;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    outline: none;
+}
+
+.header__login .subscribe{
+    color: #a7a7a7;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: transparent;
+    margin-right: 32px;
+    }
+
+    .header__login .login{
+        width: 100px;
+        height: 48px;
+        color: black;
+        font-size: 16px;
+        font-weight: 700;
+        border-radius: 40px;
+    }
+
+    .playlist{
+        margin: 24px;
+    }
+
+    .playlist #greeting {
+        color: var(--text-base-light);
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 48px;
+    }
+
+    .playlist .session{
+        color: var(--text-base-light);
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    /*SCROLL*/
+
+    .offer__scroll-container{
+        max-height: 43vh;
+        margin: 24px;
+        overflow-y: auto;
+    }
+
+    .offer__scroll-container::-webkit-scrollbar{
+        width: 1px;
+    }
+
+    .offer__scroll-container::-webkit-scrollbar-thumb{
+        background-color: transparent;
+    }
+
+    /*FIM SCROLL*/
+    
+
+    /* CARD ARTISTA */
+
+     .artist{
+        --column-count: 5;
+        --grid-gap: 24px;
+        --min-container-width: 372px;
+         }
+         
+         .hidden{
+            display: none;
+         }
+
+         .grid-container{
+            grid-gap: var(--grid-gap);
+            display: grid;
+            grid-template-columns: repeat(var(--column-count),minmax(0, 1fr));
+            min-width: var(--min-container-width);
+         }
+
+         .artist-card{
+            background: #181818;
+            
+         }
